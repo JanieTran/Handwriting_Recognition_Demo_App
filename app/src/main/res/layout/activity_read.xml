@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReadActivity"
+        android:id="@+id/mv_activity_read"
+>
+
+    <ImageView
+        android:id="@+id/iv_captured_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+    />
+
+    <TextView
+        android:id="@+id/tv_predicted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/iv_captured_image"
+        android:gravity="center"
+        android:text="Label"
+        android:textSize="22sp"
+        android:padding="22dp"
+    />
+
+    <LinearLayout
+            android:id="@+id/btn_retake"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="22dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retake"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:layout_marginEnd="12dp"
+        />
+
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/camera"
+                android:tint="@color/colorAccent"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/btn_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_button"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/btn_retake"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="22dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct me"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:layout_marginEnd="12dp"
+        />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/tick"
+            android:tint="@color/colorAccent"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

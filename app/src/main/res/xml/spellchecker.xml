@@ -1,0 +1,7 @@
+<spell-checker xmlns:android="http://schemas.android.com/apk/res/android"
+               android:label="spellchecker">
+               <!--android:settingsactivity="com.example.android.handwritinrecognition.CameraActivityty">-->
+    <subtype
+    android:label="generic"
+    android:subtypeLocale="en" />
+</spell-checker>
